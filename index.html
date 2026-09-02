@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1117" />
+  <title>Fourth Down — 2026 NFL Forecasts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#top" aria-label="Fourth Down home">
+        <span class="brand-mark">4<span>th</span></span>
+        <span class="brand-name">FOURTH<span>DOWN</span></span>
+      </a>
+      <div class="season-picker">
+        <span class="eyebrow">ACTIVE SEASON</span>
+        <button class="season-button" type="button"><span>2026 NFL</span><span class="chevron">⌄</span></button>
+      </div>
+      <nav aria-label="Main navigation">
+        <a class="nav-item active" href="#forecast"><span class="nav-icon">◒</span> Forecast</a>
+        <a class="nav-item" href="#standings"><span class="nav-icon">▤</span> Standings</a>
+        <a class="nav-item" href="#teams"><span class="nav-icon">◉</span> Teams</a>
+        <a class="nav-item" href="#methodology"><span class="nav-icon">⌁</span> Methodology</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="model-card">
+          <div class="model-status"><span class="live-dot"></span> MODEL ONLINE</div>
+          <strong>Gridiron v4.2</strong>
+          <p>Updated 6 min ago</p>
+        </div>
+        <a class="profile" href="#profile"><span class="avatar">TC</span><span><strong>Tyler Cassidy</strong><small>Pro analyst</small></span><span class="more">•••</span></a>
+      </div>
+    </aside>
+
+    <main class="main-content" id="top">
+      <header class="topbar">
+        <div class="breadcrumb"><span>2026 NFL</span><span class="slash">/</span><strong>Forecast center</strong></div>
+        <div class="top-actions"><span class="last-updated">Last synced <strong>09:42 AM</strong></span><button class="icon-button" aria-label="Notifications" type="button">♢<span class="notification-dot"></span></button><button class="avatar small" aria-label="Open profile" type="button">TC</button></div>
+      </header>
+
+      <section class="hero" id="forecast">
+        <div>
+          <div class="kicker"><span class="pulse"></span> LIVE FORECAST ENGINE</div>
+          <h1>Every game.<br><em>One clear edge.</em></h1>
+          <p class="hero-copy">AI-powered projections for every matchup of the 2026 NFL season, tuned by injuries, form, weather, and market movement.</p>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-core">26</div><span class="orbit-label label-top">18 WEEKS</span><span class="orbit-label label-right">272 GAMES</span><span class="orbit-label label-bottom">94.8% DATA</span></div>
+      </section>
+
+      <section class="metric-grid" aria-label="Season overview">
+        <article class="metric"><div class="metric-top"><span>SEASON RECORD</span><span class="trend up">↑ 4.2%</span></div><strong>28 <small>/ 41</small></strong><p>Correct picks this season</p><div class="progress"><span style="width:68%"></span></div></article>
+        <article class="metric"><div class="metric-top"><span>TOP CONFIDENCE</span><span class="team-badge badge-green">GB</span></div><strong>87<span class="unit">%</span></strong><p>Packers over Bears · Wk 01</p><div class="confidence-lines"><i></i><i></i><i></i><i></i><i class="muted"></i></div></article>
+        <article class="metric"><div class="metric-top"><span>MODEL EDGE</span><span class="trend up">↑ 2.8%</span></div><strong>+6.4<span class="unit">pts</span></strong><p>Average projected margin</p><div class="sparkline"><span style="height:20%"></span><span style="height:30%"></span><span style="height:25%"></span><span style="height:50%"></span><span style="height:42%"></span><span style="height:70%"></span><span style="height:62%"></span><span style="height:100%"></span></div></article>
+        <article class="metric accent-metric"><div class="metric-top"><span>NEXT KICKOFF</span><span class="live-label">THU 8:20 PM</span></div><strong>02<span class="unit">d</span> <small>14</small><span class="unit">h</span></strong><p>Season opener · Week 01</p><button class="text-action" type="button" data-scroll="week01">View matchup <span>↗</span></button></article>
+      </section>
+
+      <section class="workspace-section" id="standings">
+        <div class="section-heading"><div><span class="eyebrow orange">THE SLATE</span><h2>Weekly forecast</h2></div><div class="view-switcher"><button class="view-button active" type="button" data-view="cards">▦ <span>Cards</span></button><button class="view-button" type="button" data-view="table">☷ <span>Table</span></button></div></div>
+        <div class="forecast-toolbar"><div class="week-tabs" role="tablist" aria-label="Select week"><button class="week-tab active" type="button" data-week="01">Wk 01</button><button class="week-tab" type="button" data-week="02">Wk 02</button><button class="week-tab" type="button" data-week="03">Wk 03</button><button class="week-tab" type="button" data-week="04">Wk 04</button><button class="week-tab" type="button" data-week="05">Wk 05</button><button class="week-tab" type="button" data-week="06">Wk 06</button><button class="week-tab" type="button" data-week="07">Wk 07</button><button class="week-tab" type="button" data-week="08">Wk 08</button><button class="week-tab" type="button" data-week="09">Wk 09</button><button class="week-tab more-weeks" type="button">+ 09</button></div><div class="toolbar-actions"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search teams" /></label><button class="filter-button" type="button" id="filterButton">≡ <span>Filters</span><b>2</b></button></div></div>
+        <div class="date-label" id="weekLabel"><span class="date-line"></span><span>THU SEP 10 — MON SEP 14</span><span class="date-line"></span></div>
+        <div class="matchup-grid" id="matchupGrid"></div>
+        <div class="table-view hidden" id="tableView"><table><thead><tr><th>Matchup</th><th>Model pick</th><th>Win probability</th><th>Projected score</th><th>Kickoff</th></tr></thead><tbody id="tableBody"></tbody></table></div>
+        <div class="load-more"><button type="button" id="loadMore">Load all week 01 games <span>↓</span></button><span>Showing <strong id="gameCount">6</strong> of 16 games</span></div>
+      </section>
+
+      <section class="bottom-grid" id="teams">
+        <article class="insight-panel"><div class="panel-heading"><div><span class="eyebrow orange">MODEL SIGNAL</span><h2>Market movers</h2></div><button class="icon-button" aria-label="More model signals" type="button">•••</button></div><div class="mover"><span class="team-badge badge-navy">PHI</span><div class="mover-copy"><strong>Eagles</strong><small>vs. Washington · Sunday</small></div><span class="mover-value positive">+8.7%</span><div class="mini-bar"><i style="width:87%"></i></div></div><div class="mover"><span class="team-badge badge-red">SF</span><div class="mover-copy"><strong>49ers</strong><small>at Seattle · Sunday</small></div><span class="mover-value positive">+6.2%</span><div class="mini-bar"><i style="width:62%"></i></div></div><div class="mover"><span class="team-badge badge-blue">BUF</span><div class="mover-copy"><strong>Bills</strong><small>at NY Jets · Monday</small></div><span class="mover-value negative">−3.1%</span><div class="mini-bar"><i class="negative-bar" style="width:31%"></i></div></div></article>
+        <article class="insight-panel dark-panel" id="methodology"><div class="panel-heading"><div><span class="eyebrow mint">HOW IT THINKS</span><h2>Projection recipe</h2></div><span class="recipe-icon">✦</span></div><p class="recipe-copy">A weighted blend that learns from every snap, not just the scoreboard.</p><div class="recipe-row"><span><i class="dot cyan"></i> Team strength</span><strong>35%</strong></div><div class="recipe-row"><span><i class="dot yellow"></i> Player availability</span><strong>25%</strong></div><div class="recipe-row"><span><i class="dot pink"></i> Matchup dynamics</span><strong>20%</strong></div><div class="recipe-row"><span><i class="dot white"></i> Situational data</span><strong>20%</strong></div></article>
+      </section>
+      <footer><span>FOURTHDOWN / 2026</span><span>Forecasts are simulations, not guarantees.</span><span>Data refreshes every 15 min</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status">Filters applied to your slate</div>
+  <script src="app.js"></script>
+</body>
+</html>
